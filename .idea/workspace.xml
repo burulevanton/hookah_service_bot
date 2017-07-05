@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8a2104bb-77ac-4b99-a5d0-5db091dbef24" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hookah_service.db" afterPath="$PROJECT_DIR$/hookah_service.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bot.py" afterPath="$PROJECT_DIR$/bot.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.py" afterPath="$PROJECT_DIR$/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql_handler.py" afterPath="$PROJECT_DIR$/sql_handler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils.py" afterPath="$PROJECT_DIR$/utils.py" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/bot$bot.coverage" NAME="bot Coverage Results" MODIFIED="1497643296001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/hookah_service_bot$bot.coverage" NAME="bot Coverage Results" MODIFIED="1499240910231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="hookah_service.db" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="hookah_service.db" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="main" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="591">
+              <caret line="49" column="15" lean-forward="false" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sql_handler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql_handler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="421">
+              <caret line="106" column="117" lean-forward="false" selection-start-line="106" selection-start-column="117" selection-end-line="106" selection-end-column="117" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+                <marker date="1499199089973" expanded="true" signature="854:995" ph="SELECT Table... Categories" />
+                <marker date="1499199089973" expanded="true" signature="1182:1213" ph="SELECT Categ... Categories" />
+                <marker date="1499199089973" expanded="true" signature="1368:1403" ph="SELECT Produ... Assortment" />
+                <marker date="1499199089973" expanded="true" signature="1614:1740" ph="SELECT Produ... Assortment" />
+                <marker date="1499199089973" expanded="true" signature="2095:2226" ph="SELECT {1} F... " />
+                <marker date="1499199089973" expanded="true" signature="2446:2478" ph="SELECT Descr... Products" />
+                <marker date="1499199089973" expanded="true" signature="2702:2828" ph="SELECT Desri... Products" />
+                <marker date="1499199089973" expanded="true" signature="3063:3110" ph="SELECT Unit Products" />
+                <marker date="1499199089973" expanded="true" signature="3063:3113" ph="SELECT Unit Products" />
+                <marker date="1499199089973" expanded="true" signature="3317:3603" ph="SELECT Produ... Assortment" />
+                <marker date="1499199089973" expanded="true" signature="3794:4133" ph="SELECT Price... Assortment" />
+                <marker date="1499199089973" expanded="true" signature="4316:4410" ph="SELECT Sub_p... Products" />
+                <marker date="1499199089973" expanded="true" signature="4316:4422" ph="SELECT Sub_p... Products" />
+                <marker date="1499199089973" expanded="true" signature="4316:4442" ph="SELECT Sub_p... Products" />
+                <marker date="1499199089973" expanded="true" signature="4316:4452" ph="SELECT Sub_p... Products" />
+                <marker date="1499199089973" expanded="true" signature="4316:4462" ph="SELECT Sub_p... Products" />
+                <marker date="1499199089973" expanded="true" signature="4316:4470" ph="SELECT Sub_p... Products" />
+                <marker date="1499199089973" expanded="true" signature="4316:4471" ph="SELECT Sub_p... Products" />
+                <marker date="1499199089973" expanded="true" signature="4316:4475" ph="SELECT Sub_p... Products" />
+                <marker date="1499199089973" expanded="true" signature="4733:4789" ph="SELECT custo... Customer" />
+                <marker date="1499199089973" expanded="true" signature="4733:4792" ph="SELECT custo... Customer" />
+                <marker date="1499199089973" expanded="true" signature="4893:4955" ph="INSERT INTO Customer... " />
+                <marker date="1499199089973" expanded="true" signature="4893:4967" ph="INSERT INTO Customer... " />
+                <marker date="1499199089973" expanded="true" signature="5135:5191" ph="SELECT custo... Customer" />
+                <marker date="1499199089973" expanded="true" signature="5135:5193" ph="SELECT custo... Customer" />
+                <marker date="1499199089973" expanded="true" signature="5295:5355" ph="INSERT INTO &quot;Order&quot;... " />
+                <marker date="1499199089973" expanded="true" signature="5461:5523" ph="SELECT Order... Order" />
+                <marker date="1499199089973" expanded="true" signature="5656:5740" ph="INSERT INTO OrderProducts... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.OrderProducts" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.OrderProducts">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bot.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="90" column="122" lean-forward="true" selection-start-line="90" selection-start-column="122" selection-end-line="90" selection-end-column="122" />
+              <folding>
+                <element signature="e#0#129#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.Customer" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Customer">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order_calc.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/order_calc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="846">
+              <caret line="101" column="51" lean-forward="false" selection-start-line="101" selection-start-column="51" selection-end-line="101" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.Products" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Products">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8d2fd324-ac70-4f4d-9e21-7210afb391df/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="81" lean-forward="false" selection-start-line="0" selection-start-column="81" selection-end-line="0" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.Order" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Order">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>print</find>
+      <find>list_tup</find>
+      <find>genera</find>
+      <find>order_calc</find>
+      <find>temp</find>
+      <find>des</find>
+      <find>replykeyboard</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e75f6a0d-3850-4b82-9831-284dd4493c81/console.sql" />
+        <option value="dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Assortment" />
+        <option value="dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
+        <option value="dbtable:/73fc7c23/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Assortment" />
+        <option value="dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Coal" />
+        <option value="$PROJECT_DIR$/Order.py" />
+        <option value="$PROJECT_DIR$/settings.py" />
+        <option value="$PROJECT_DIR$/utils.py" />
+        <option value="$PROJECT_DIR$/order_calc.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8d2fd324-ac70-4f4d-9e21-7210afb391df/console.sql" />
+        <option value="$PROJECT_DIR$/sql_handler.py" />
+        <option value="$PROJECT_DIR$/bot.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hookah_service_bot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hookah_service_bot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)&#10;DB2 (JTOpen)&#10;DDL Data Source" />
+    <property name="DataGrid.QuickDoc.View" value="regular" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.bot">
+    <configuration default="false" name="bot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\ProgramData\Anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="hookah_service_bot" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bot" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bot" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bot" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bot" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="bot" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bot" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bot" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.bot" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.bot" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a2104bb-77ac-4b99-a5d0-5db091dbef24" name="Default" comment="" />
+      <created>1496860711905</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1496860711905</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26630434" sideWeight="0.503125" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20978262" sideWeight="0.496875" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33043477" sideWeight="0.49791667" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0875" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14322917" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39891306" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32966456" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="93" y="100" width="1724" height="847" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
+    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
+    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
+    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
+    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
+    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
+    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
+    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
+    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
+    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
+    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
+    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
+    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
+    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
+    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
+    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
+    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Categories" />
+    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
+    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Hose" />
+    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Assortment" />
+    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Coal" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e75f6a0d-3850-4b82-9831-284dd4493c81/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/73fc7c23/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.sqlite_master" />
+    <entry file="dbDummy://dbtable:/73fc7c23/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Categories" />
+    <entry file="dbDummy://dbtable:/73fc7c23/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.sqlite_sequence" />
+    <entry file="dbDummy://dbtable:/73fc7c23/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Assortment" />
+    <entry file="dbDummy://dbtable:/73fc7c23/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Coal" />
+    <entry file="dbDummy://dbtable:/73fc7c23/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Tobacco" />
+    <entry file="dbDummy://dbtable:/73fc7c23/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Hose" />
+    <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Tobacco">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Hose">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.sqlite_sequence">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Coal">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.sqlite_master">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Order">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Order</OriginalElement>
+          <nodes>
+            <node x="" y="">8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Customer</node>
+            <node x="" y="">8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Order</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="91.0" y="110.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.OrderProducts">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.OrderProducts</OriginalElement>
+          <nodes>
+            <node x="" y="">8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Customer</node>
+            <node x="" y="">8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Order</node>
+            <node x="" y="">8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Categories</node>
+            <node x="" y="">8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Products</node>
+            <node x="" y="">8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Assortment</node>
+            <node x="" y="">8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.OrderProducts</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.8720748829953198" x="270.0" y="331.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Order.py" />
+    <entry file="file://$PROJECT_DIR$/shelve.db.bak">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Products">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Products</OriginalElement>
+          <nodes>
+            <node x="" y="">8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Categories</node>
+            <node x="" y="">8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Assortment</node>
+            <node x="" y="">8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Products</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="179.0" y="260.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Assortment">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Categories">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="49" column="15" lean-forward="false" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Customer">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Products">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8d2fd324-ac70-4f4d-9e21-7210afb391df/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="81" lean-forward="false" selection-start-line="0" selection-start-column="81" selection-end-line="0" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.OrderProducts">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order_calc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="101" column="51" lean-forward="false" selection-start-line="101" selection-start-column="51" selection-end-line="101" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Order">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql_handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="106" column="117" lean-forward="false" selection-start-line="106" selection-start-column="117" selection-end-line="106" selection-end-column="117" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1499199089973" expanded="true" signature="854:995" ph="SELECT Table... Categories" />
+            <marker date="1499199089973" expanded="true" signature="1182:1213" ph="SELECT Categ... Categories" />
+            <marker date="1499199089973" expanded="true" signature="1368:1403" ph="SELECT Produ... Assortment" />
+            <marker date="1499199089973" expanded="true" signature="1614:1740" ph="SELECT Produ... Assortment" />
+            <marker date="1499199089973" expanded="true" signature="2095:2226" ph="SELECT {1} F... " />
+            <marker date="1499199089973" expanded="true" signature="2446:2478" ph="SELECT Descr... Products" />
+            <marker date="1499199089973" expanded="true" signature="2702:2828" ph="SELECT Desri... Products" />
+            <marker date="1499199089973" expanded="true" signature="3063:3110" ph="SELECT Unit Products" />
+            <marker date="1499199089973" expanded="true" signature="3063:3113" ph="SELECT Unit Products" />
+            <marker date="1499199089973" expanded="true" signature="3317:3603" ph="SELECT Produ... Assortment" />
+            <marker date="1499199089973" expanded="true" signature="3794:4133" ph="SELECT Price... Assortment" />
+            <marker date="1499199089973" expanded="true" signature="4316:4410" ph="SELECT Sub_p... Products" />
+            <marker date="1499199089973" expanded="true" signature="4316:4422" ph="SELECT Sub_p... Products" />
+            <marker date="1499199089973" expanded="true" signature="4316:4442" ph="SELECT Sub_p... Products" />
+            <marker date="1499199089973" expanded="true" signature="4316:4452" ph="SELECT Sub_p... Products" />
+            <marker date="1499199089973" expanded="true" signature="4316:4462" ph="SELECT Sub_p... Products" />
+            <marker date="1499199089973" expanded="true" signature="4316:4470" ph="SELECT Sub_p... Products" />
+            <marker date="1499199089973" expanded="true" signature="4316:4471" ph="SELECT Sub_p... Products" />
+            <marker date="1499199089973" expanded="true" signature="4316:4475" ph="SELECT Sub_p... Products" />
+            <marker date="1499199089973" expanded="true" signature="4733:4789" ph="SELECT custo... Customer" />
+            <marker date="1499199089973" expanded="true" signature="4733:4792" ph="SELECT custo... Customer" />
+            <marker date="1499199089973" expanded="true" signature="4893:4955" ph="INSERT INTO Customer... " />
+            <marker date="1499199089973" expanded="true" signature="4893:4967" ph="INSERT INTO Customer... " />
+            <marker date="1499199089973" expanded="true" signature="5135:5191" ph="SELECT custo... Customer" />
+            <marker date="1499199089973" expanded="true" signature="5135:5193" ph="SELECT custo... Customer" />
+            <marker date="1499199089973" expanded="true" signature="5295:5355" ph="INSERT INTO &quot;Order&quot;... " />
+            <marker date="1499199089973" expanded="true" signature="5461:5523" ph="SELECT Order... Order" />
+            <marker date="1499199089973" expanded="true" signature="5656:5740" ph="INSERT INTO OrderProducts... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="90" column="122" lean-forward="true" selection-start-line="90" selection-start-column="122" selection-end-line="90" selection-end-column="122" />
+          <folding>
+            <element signature="e#0#129#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
