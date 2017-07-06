@@ -2,18 +2,6 @@ from telegram import ReplyKeyboardMarkup
 from settings import translation
 from telebot import types
 
-def separation(lst, n):
-    return [lst[i:i + n] for i in range(0, len(lst), n)]
-
-
-def generate_list_list(list):
-    list_list = []
-    if len(list)>3:
-        list_list = separation(list,3)
-    else:
-        list_list.append(list)
-    return list_list
-
 
 def generate_markup(keyboard):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True,one_time_keyboard=False,row_width=3)

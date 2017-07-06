@@ -1,6 +1,7 @@
 token = '***REMOVED***'
 database = 'hookah_service.db'
 shelve_name = 'shelve.db'
+fsm_name = 'fsm.db'
 translation = {
     #'Tobacco."Weight"' : "Тип пачки",
     #'Tobacco."Price <1kg"' : "Цена до 1кг",

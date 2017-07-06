@@ -1,6 +1,7 @@
 import sqlite3
 from settings import database
-from order_calc import temp_data, customer_subproduct_id
+from order_calc import CustomerTempData
+
 
 class SqlHadler:
 
@@ -13,16 +14,6 @@ class SqlHadler:
         for l in list_tuple:
             list.append(l[0])
         return list
-
-    def get_columns(self,table_name):
-        with self.connection:
-            sql_request = "PRAGMA TABLE_INFO ({})".format(table_name)
-            list = self.cursor.execute(sql_request).fetchall()
-            columns_list = []
-            for l in list:
-                if l[1] != 'Product_id':
-                    columns_list.append(table_name+'."'+l[1]+'"')
-            return ",".join(columns_list)
 
     def get_table_name(self,text):
         sql_request = 'SELECT Table_name FROM Categories INNER JOIN Assortment ON Categories.Category_id = Assortment.Category_id AND Assortment.Product_name = "{}"'.format(text)
@@ -86,9 +77,10 @@ class SqlHadler:
 
     def set_subproduct_id(self,chat_id,text):
         with self.connection:
-            sql = "SELECT Sub_product_id FROM Products INNER JOIN Assortment ON Products.Product_id = Assortment.\"Product id\" and Description = '{0}' AND \"Product_name\"='{1}'".format(text,temp_data(chat_id))
+            temp_data = CustomerTempData().temp_data(chat_id)
+            sql = "SELECT Sub_product_id FROM Products INNER JOIN Assortment ON Products.Product_id = Assortment.\"Product id\" and Description = '{0}' AND \"Product_name\"='{1}'".format(text,temp_data)
             subproduct_id = self.cursor.execute(sql).fetchone()[0]
-            customer_subproduct_id(chat_id,subproduct_id)
+            CustomerTempData().customer_subproduct_id(chat_id,subproduct_id)
 
     def add_customer(self,chat_id,phone_number):
         with self.connection:
@@ -97,12 +89,11 @@ class SqlHadler:
                 sql = "INSERT INTO Customer (phone_number, customer_chat_id) VALUES ('{0}','{1}');".format(phone_number,chat_id)
                 self.cursor.execute(sql)
 
-
     def add_order(self,chat_id,full_price):
         with self.connection:
-            sql =' SELECT customer_id FROM Customer WHERE customer_chat_id={}'.format(chat_id)
+            sql ='SELECT customer_id FROM Customer WHERE customer_chat_id={}'.format(chat_id)
             customer_id = self.cursor.execute(sql).fetchone()[0]
-            sql = 'INSERT INTO "Order" (Customer_id, Total_cost) VALUES ({},{})'.format(chat_id,full_price)
+            sql = 'INSERT INTO "Order" (Customer_id, Total_cost) VALUES ({},{})'.format(customer_id,full_price)
             self.cursor.execute(sql)
             return self.cursor.execute('SELECT Order_id FROM "Order" WHERE rowid = last_insert_rowid()').fetchone()[0]
 
@@ -110,6 +101,30 @@ class SqlHadler:
         with self.connection:
             sql = 'INSERT INTO OrderProducts (Order_id, Product_id, Weight, Price) VALUES ({},{},{},{})'.format(order_id,product_id,weigth,price)
             self.cursor.execute(sql)
+
+    def get_order_ids(self, chat_id):
+        with self.connection:
+            sql = 'SELECT customer_id FROM Customer WHERE customer_chat_id={}'.format(chat_id)
+            customer_id = self.cursor.execute(sql).fetchone()
+            if not customer_id:
+                return []
+            else:
+                customer_id = customer_id[0]
+            sql = 'SELECT Order_id FROM "Order" INNER JOIN Customer ON "Order".Customer_id = Customer.customer_id and Customer.customer_id={}'.format(customer_id)
+            list = self.list_tuple_to_list(self.cursor.execute(sql).fetchall())
+            return list
+
+    def get_product_info_from_order(self,order_id):
+        with self.connection:
+            sql = 'SELECT Product_id,Weight,Price FROM OrderProducts WHERE Order_id={}'.format(order_id)
+            list_tuple = self.cursor.execute(sql).fetchall()
+            return list_tuple
+
+    def get_min_weight(self,subproduct_id):
+        with self.connection:
+            sql ='SELECT Min_weight FROM Products Where Sub_product_id={}'.format(subproduct_id)
+            return self.cursor.execute(sql).fetchone()[0]
+
 
     def close(self):
         self.connection.close()
