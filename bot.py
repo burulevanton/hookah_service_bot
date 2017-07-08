@@ -61,13 +61,30 @@ class Bot(telebot.TeleBot):
         def order_product(message):
             db = sql_handler.SqlHadler()
             text = 'Выберите необходимый тип товара\n\n'
-            text = text + self.generate_message(db.get_product_info(message.text))
+            for text in self.generate_message(message.text):
+                self.send_message(chat_id=message.chat.id, text=text)
             markup = self.generate_markup(db.get_subproduct_info(message.text))
             self.temp_data.initialize_customer(str(message.chat.id), message.text)
+            if db.get_category_of_product(message.text) == 'Табак':
+                self.fsm.set_state(message.chat.id, 'choose_flavor')
+            else:
+                self.fsm.set_state(message.chat.id, 'set_weight')
+            self.send_message(chat_id=message.chat.id, text='Выберите необходимый тип товара', reply_markup=markup)
             db.close()
-            self.fsm.set_state(message.chat.id, 'set_weight')
-            self.send_message(chat_id=message.chat.id, text=text, reply_markup=markup)
 
+        @self.message_handler(func=lambda mess: mess.text in sql_handler.SqlHadler().get_full_subproduct_info()
+                                                and self.fsm.get_current_state(mess.chat.id) == 'choose_flavor',
+                              content_types=['text'])
+        def choose_flavor(message):
+            db = sql_handler.SqlHadler()
+            markup = self.generate_markup(db.get_flavor(message.text, self.temp_data.temp_data(message.chat.id)))
+            self.send_message(chat_id=message.chat.id, text = 'Выберите вкус', reply_markup=markup)
+            self.fsm.set_state(message.chat.id, 'set_weight')
+            db.close()
+
+        @self.message_handler(func = lambda mess:mess.text in sql_handler.SqlHadler().get_all_flavors()
+                                                 and self.fsm.get_current_state(mess.chat.id) == 'set_weight',
+                              content_types=['text'])
         @self.message_handler(func=lambda mess: mess.text in sql_handler.SqlHadler().get_full_subproduct_info()
                                                 and self.fsm.get_current_state(mess.chat.id) == 'set_weight',
                               content_types=['text'])
@@ -89,6 +106,7 @@ class Bot(telebot.TeleBot):
             subproduct_id = self.temp_data.get_subproduct_id(message.chat.id)
             Category, Product_name, Description, Unit = db.get_order_info_for_customer(subproduct_id)
             weight = float(message.text)
+            print(self.temp_data.get_subproduct_id(message.chat.id))
             Price, Small_discount, Small_discount_treshold, Big_discount, Big_discount_treshold, Unit_size = db.count_order_info(
                 self.temp_data.get_subproduct_id(message.chat.id))
             if not db.get_min_weight(subproduct_id):
@@ -102,7 +120,9 @@ class Bot(telebot.TeleBot):
                 self.send_message(chat_id=message.chat.id, text=text, reply_markup=markup)
                 return
             count = weight / Unit_size
-            if not Big_discount_treshold:
+            if not Big_discount_treshold and not Small_discount_treshold:
+                price = Price
+            elif not Big_discount_treshold:
                 if weight < Small_discount_treshold:
                     price = count * Price
                 else:
@@ -242,9 +262,9 @@ class Bot(telebot.TeleBot):
                               content_types=['text'])
         def product_info(message):
             db = sql_handler.SqlHadler()
-            text = self.generate_message(db.get_product_info(message.text))
             markup = types.ReplyKeyboardRemove()
-            self.send_message(chat_id=message.chat.id, text=text, reply_markup=markup)
+            for text in self.generate_message(message.text):
+                self.send_message(chat_id=message.chat.id, text=text, reply_markup=markup)
             db.close()
 
         @self.message_handler(commands=['help'],content_types=['text'])
@@ -332,28 +352,41 @@ class Bot(telebot.TeleBot):
 
     def generate_markup(self,keyboard):
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=False, row_width=3)
-        markup.add(*keyboard)
+        markup.add(*list(set(keyboard)))
         return markup
 
-    def generate_message(self,list_tuple):
+    def generate_message(self, product_name):
+        db = sql_handler.SqlHadler()
         message = 'В наличии:\n\n'
-        for l in list_tuple:
-            # l[0] - description
-            # l[1] - price
-            # l[2] - small_discount
-            # l[3] - small_discount_treshold
-            # l[4] - big_discount
-            # l[5] - big_discount_treshold
-            # l[6] - unit
-            message = message + 'описание - {0}\n'.format(l[0])
-            message = message + 'цена до {0}{1} - {2}руб.\n'.format(str(l[3]), l[6], str(l[1]))
-            if l[4]:
-                message = message + 'цена {0}-{1}{2} - {3}руб.\n'.format(str(l[3]), str(l[5]), l[6], str(l[2]))
-                message = message + 'цена от {0}{1} - {2}руб.\n'.format(str(l[5]), l[6], str(l[4]))
-            else:
-                message = message + 'цена от {0}{1} - {2}руб.\n'.format(str(l[3]), l[6], str(l[2]))
-            message = message + '\n'
-        return message
+        decription_list = db.get_product_description(product_name)
+        decription_list = list(set(decription_list))
+        for description in decription_list:
+            #description[0] - description
+            #description[1] - subproduct_id
+            # l[0] - price
+            # l[1] - small_discount
+            # l[2] - small_discount_treshold
+            # l[3] - big_discount
+            # l[4] - big_discount_treshold
+            # l[5] - unit
+            # l[6] - flavor
+            message = message + 'описание - {0}\n\n'.format(description)
+            info_list = db.get_product_info(description,product_name)
+            for l in info_list:
+                if l[1]:
+                    message = message + 'цена до {0}{1} - {2}руб.\n'.format(str(l[2]), l[5], str(l[0]))
+                    if l[4]:
+                        message = message + 'цена {0}-{1}{2} - {3}руб.\n'.format(str(l[2]), str(l[4]), l[5], str(l[1]))
+                        message = message + 'цена от {0}{1} - {2}руб.\n'.format(str(l[4]), l[5], str(l[3]))
+                    else:
+                        message = message + 'цена от {0}{1} - {2}руб.\n'.format(str(l[2]), l[5], str(l[1]))
+                    if db.get_category_of_product(product_name) == 'Табак':
+                        message = message + 'вкус - {}\n'.format(l[6])
+                else:
+                    message = message + '{} - {}руб'.format(l[6], l[0])
+                message = message +'\n'
+            yield message
+            message = ''
 
     def isFloat(self,value):
         try:

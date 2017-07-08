@@ -11,7 +11,7 @@ class CustomerTempData:
 
     def temp_data(self, chat_id):
         with shelve.open(shelve_name) as storage:
-            return storage.pop(str(chat_id))
+            return storage[str(chat_id)]
 
     def customer_subproduct_id(self, chat_id,subproduct_id):
         with shelve.open(shelve_name) as storage:
