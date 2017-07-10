@@ -7,7 +7,16 @@ class CustomerTempData:
 
     def initialize_customer(self, chat_id, product_name):
         with shelve.open(shelve_name) as storage:
-            storage[chat_id] = product_name
+            #try:
+                #storage.pop(str(chat_id))
+                #storage[str(chat_id)]=product_name
+            #except KeyError:
+                storage[str(chat_id)] = product_name
+
+    def set_description(self,chat_id, description):
+        with shelve.open(shelve_name) as storage:
+            product_name = storage.pop(str(chat_id))
+            storage[str(chat_id)] = (product_name, description)
 
     def temp_data(self, chat_id):
         with shelve.open(shelve_name) as storage:
@@ -15,6 +24,7 @@ class CustomerTempData:
 
     def customer_subproduct_id(self, chat_id,subproduct_id):
         with shelve.open(shelve_name) as storage:
+            storage.pop(str(chat_id))
             storage[str(chat_id)] = subproduct_id
 
     def get_subproduct_id(self, chat_id):
@@ -44,6 +54,13 @@ class CustomerTempData:
         with shelve.open(shelve_name) as storage:
             return storage.pop(str(chat_id))
 
+    def set_description_of_order(self,chat_id,description):
+        with shelve.open(shelve_name) as storage:
+            storage[str(chat_id)] = description
+
+    def get_order_description(self,chat_id):
+        with shelve.open(shelve_name) as storage:
+            return storage[str(chat_id)]
 
 class TempShelve:
 
@@ -53,10 +70,10 @@ class TempShelve:
 
     def add_product(self,chat_id):
         if str(chat_id) not in self.dictionary:
-            subproduct_id, weigth,price = self.temp_data.get_order(str(chat_id))
+            subproduct_id, weigth,price = self.temp_data.get_order_product(str(chat_id))
             self.dictionary[str(chat_id)] = {str(subproduct_id) : (weigth,price)}
         else:
-            subproduct_id,weigth,price = self.temp_data.get_order(str(chat_id))
+            subproduct_id,weigth,price = self.temp_data.get_order_product(str(chat_id))
             if str(subproduct_id) not in self.dictionary[str(chat_id)].keys():
                 self.dictionary[str(chat_id)][str(subproduct_id)] = (weigth, price)
             else:
@@ -65,18 +82,25 @@ class TempShelve:
 
     def order_description(self,subproduct_id,weigth=0,price=0):
         db = sql_handler.SqlHadler()
-        Category, Product_name, Description, Unit = db.get_order_info_for_customer(subproduct_id)
+        Category, Product_name, Description, Unit, Flavor = db.get_order_info_for_customer(subproduct_id)
         if weigth==0:
-            return '{} {} {} '.format(Category, Product_name, Description)
+            if Flavor == 'нет':
+                return '{} {} {} '.format(Category, Product_name, Description)
+            else:
+                return '{} {} {} {}'.format(Category, Product_name, Description,Flavor)
         else:
-            return '{} {} {} {} {} - {} рублей\n'.format(Category, Product_name, Description, weigth,
+            if Flavor =='нет':
+                return '{} {} {} {} {} - {} рублей\n'.format(Category, Product_name, Description, weigth,
                                                                       Unit, int(price))
+            else:
+                return '{} {} {} {} {} {} - {} рублей\n'.format(Category, Product_name, Description, Flavor, weigth,
+                                                             Unit, int(price))
 
     def order_info(self,chat_id):
         if str(chat_id) not in self.dictionary:
             return None
         else:
-            message = 'Ваш заказ\n'
+            message = ''
             order_price = 0
             for product in self.dictionary[str(chat_id)].items():
                 subproduct_id= product[0]

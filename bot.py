@@ -60,7 +60,6 @@ class Bot(telebot.TeleBot):
                               content_types=['text'])
         def order_product(message):
             db = sql_handler.SqlHadler()
-            text = 'Выберите необходимый тип товара\n\n'
             for text in self.generate_message(message.text):
                 self.send_message(chat_id=message.chat.id, text=text)
             markup = self.generate_markup(db.get_subproduct_info(message.text))
@@ -79,6 +78,7 @@ class Bot(telebot.TeleBot):
             db = sql_handler.SqlHadler()
             markup = self.generate_markup(db.get_flavor(message.text, self.temp_data.temp_data(message.chat.id)))
             self.send_message(chat_id=message.chat.id, text = 'Выберите вкус', reply_markup=markup)
+            self.temp_data.set_description(message.chat.id,message.text)
             self.fsm.set_state(message.chat.id, 'set_weight')
             db.close()
 
@@ -91,6 +91,8 @@ class Bot(telebot.TeleBot):
         def set_weight(message):
             markup = telebot.types.ReplyKeyboardRemove()
             db = sql_handler.SqlHadler()
+            if message.text in db.get_full_subproduct_info():
+                self.temp_data.set_description(message.chat.id, message.text)
             db.set_subproduct_id(message.chat.id, message.text)
             text = 'Введите необходимое количество в {0}'.format(
                 db.get_unit(self.temp_data.get_subproduct_id(message.chat.id)))
@@ -104,9 +106,7 @@ class Bot(telebot.TeleBot):
         def count_order(message):
             db = sql_handler.SqlHadler()
             subproduct_id = self.temp_data.get_subproduct_id(message.chat.id)
-            Category, Product_name, Description, Unit = db.get_order_info_for_customer(subproduct_id)
             weight = float(message.text)
-            print(self.temp_data.get_subproduct_id(message.chat.id))
             Price, Small_discount, Small_discount_treshold, Big_discount, Big_discount_treshold, Unit_size = db.count_order_info(
                 self.temp_data.get_subproduct_id(message.chat.id))
             if not db.get_min_weight(subproduct_id):
@@ -121,7 +121,7 @@ class Bot(telebot.TeleBot):
                 return
             count = weight / Unit_size
             if not Big_discount_treshold and not Small_discount_treshold:
-                price = Price
+                price = count * Price
             elif not Big_discount_treshold:
                 if weight < Small_discount_treshold:
                     price = count * Price
@@ -140,8 +140,7 @@ class Bot(telebot.TeleBot):
             markup.add(telebot.types.InlineKeyboardButton(text='Удалить товар', callback_data='delete'))
             text = 'Идёт подсчёт'
             self.send_message(chat_id=message.chat.id, text=text, reply_markup=types.ReplyKeyboardRemove())
-            text = 'Вы выбрали:\n' \
-                   '{} {} {} {} {} - {} рублей'.format(Category, Product_name, Description, weight, Unit, int(price))
+            text = 'Вы выбрали\n'+self.temp_shelve.order_description(subproduct_id,weight,price)
             self.temp_data.add_order_product(message.chat.id, int(price), weight)
             self.send_message(chat_id=message.chat.id, text=text, reply_markup=markup)
             self.fsm.set_state(str(message.chat.id),'accept_order')
@@ -150,12 +149,24 @@ class Bot(telebot.TeleBot):
         @self.callback_query_handler(func=lambda call: call.data == 'execute_order')
         def execute_order(call):
             markup = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=False)
-            markup.add(telebot.types.KeyboardButton(text='Нажмите на кнопку, чтобы передать ваш номер телефона',
-                                                    request_contact=True))
-            self.fsm.set_state(call.message.chat.id, 'contact')
+            markup.add(telebot.types.KeyboardButton(text='Пропустить'))
+            self.fsm.set_state(call.message.chat.id, 'set_description_to_order')
             self.edit_message_text(text=call.message.text, chat_id=call.message.chat.id,
                                    message_id=call.message.message_id)
-            self.send_message(text='Для начала сообщите свой номер телефона', chat_id=call.message.chat.id,
+            self.send_message(text='Введите комментарии к заказу или нажмите пропустить, чтобы перейти дальше', chat_id=call.message.chat.id,
+                              reply_markup=markup)
+
+        @self.message_handler(func= lambda mess: self.fsm.get_current_state(mess.chat.id) == 'set_description_to_order',content_types=['text'])
+        def description(message):
+            if message.text == 'Пропустить':
+                description = 'нет'
+            else:
+                description = message.text
+            self.temp_data.set_description_of_order(message.chat.id,description)
+            markup = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=False)
+            markup.add(telebot.types.KeyboardButton(text='Нажмите на кнопку, чтобы передать номер телефона',request_contact=True))
+            self.fsm.set_state(message.chat.id, 'contact')
+            self.send_message(text='Cообщите свой номер телефона', chat_id=message.chat.id,
                               reply_markup=markup)
 
         @self.message_handler(func=lambda message: self.fsm.get_current_state(message.chat.id) == 'contact',
@@ -163,12 +174,13 @@ class Bot(telebot.TeleBot):
         def contact(message):
             db = sql_handler.SqlHadler()
             db.add_customer(message.chat.id, message.contact.phone_number)
-            order_id = db.add_order(message.chat.id, self.temp_shelve.get_full_price(message.chat.id))
+            order_id = db.add_order(message.chat.id, self.temp_shelve.get_full_price(message.chat.id),self.temp_data.get_order_description(message.chat.id))
             self.add_products(db, message.chat.id, order_id)
             text = 'Ваш заказ №{} был оформлен, ожидайте, пока мы вам позвоним'.format(order_id)
 
             self.send_message(text=text, chat_id=message.chat.id,reply_markup=types.ReplyKeyboardRemove())
             text = 'Новый заказ №{0}!\n'.format(order_id) + self.temp_shelve.order_info(message.chat.id)
+            text = text+'Комментарии к заказу:\n'+self.temp_data.get_order_description(message.chat.id)
             self.send_message(text=text, chat_id=***REMOVED***)
             self.send_contact(chat_id=***REMOVED***, phone_number=message.contact.phone_number,
                               first_name=message.contact.first_name)
@@ -191,15 +203,29 @@ class Bot(telebot.TeleBot):
         def accept(call):
             db = sql_handler.SqlHadler()
             subproduct_id, weigth, price = self.temp_data.get_order_product(call.message.chat.id)
-            Category, Product_name, Description, Unit = db.get_order_info_for_customer(subproduct_id)
+            message = 'Вы успешно добавили продукт\n' + self.temp_shelve.order_description(subproduct_id,weigth,price)
             self.temp_shelve.add_product(call.message.chat.id)
-            message = 'Вы добавили продукт\n' \
-                      '{} {} {} {} {} - {} рублей\n\n' \
-                      'Выберите /order, чтобы продолжить работу с заказом'.format(Category, Product_name,
-                                                                                  Description,
-                                                                                  weigth, Unit, int(price))
-            self.edit_message_text(text=message, chat_id=call.message.chat.id, message_id=call.message.message_id)
+            markup = types.InlineKeyboardMarkup()
+            markup.add(types.InlineKeyboardButton(text='Продолжить работу с заказом',callback_data='continue_work_with_order'))
+            markup.add(types.InlineKeyboardButton(text='Вернуться к выбору товаров данного продукта',callback_data='return'))
+            self.edit_message_text(text=message, chat_id=call.message.chat.id, message_id=call.message.message_id,reply_markup=markup)
+            self.fsm.set_state(call.message.chat.id,'decision')
             db.close()
+
+        @self.callback_query_handler(func=lambda call: call.data =='continue_work_with_order')
+        def continue_work(call):
+            self.edit_message_text(chat_id=call.message.chat.id,message_id = call.message.message_id, text = call.message.text)
+            order(call.message)
+
+        @self.callback_query_handler(func=lambda call:call.data == 'return')
+        def return_to_product(call):
+            subproduct_id = self.temp_data.get_order_product(call.message.chat.id)[0]
+            self.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
+                                   text=call.message.text)
+            db = sql_handler.SqlHadler()
+            call.message.text = db.get_product_name(subproduct_id)
+            self.fsm.set_state(call.message.chat.id,'order_product')
+            order_product(call.message)
 
         @self.callback_query_handler(func=lambda call: call.data == 'change')
         def change(call):
@@ -318,6 +344,7 @@ class Bot(telebot.TeleBot):
                       'Выберите категорию'
             markup = self.generate_markup(db.get_categories())
         else:
+            message = 'Ваш заказ\n' + message
             markup = telebot.types.InlineKeyboardMarkup()
             markup.add(telebot.types.InlineKeyboardButton('Оформить заказ', callback_data='execute_order'),
                        telebot.types.InlineKeyboardButton('Удалить заказ', callback_data='delete_order'))
@@ -347,17 +374,19 @@ class Bot(telebot.TeleBot):
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=False)
         min_offer = min_weight if count==0 or weight<min_weight else count*unit_size
         markup.add(str(min_offer))
-        markup.add(str(min_offer+float(unit_size)))
+        markup.add(str(min_offer+unit_size))
         return markup
 
     def generate_markup(self,keyboard):
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=False, row_width=3)
-        markup.add(*list(set(keyboard)))
+        #markup.add(*list(set(keyboard)))
+        keyboard = list(dict(zip(keyboard,keyboard)).values())
+        markup.add(*keyboard)
         return markup
 
     def generate_message(self, product_name):
         db = sql_handler.SqlHadler()
-        message = 'В наличии:\n\n'
+        message = product_name + '\nВ наличии:\n\n'
         decription_list = db.get_product_description(product_name)
         decription_list = list(set(decription_list))
         for description in decription_list:

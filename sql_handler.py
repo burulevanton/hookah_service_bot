@@ -75,7 +75,7 @@ class SqlHadler:
 
     def get_order_info_for_customer(self,subproduct_id):
         with self.connection:
-            sql_request ='SELECT Category,Product_name,Description,Unit FROM Assortment INNER JOIN Products' \
+            sql_request ='SELECT Category,Product_name,Description,Unit,Flavor FROM Assortment INNER JOIN Products' \
                          ' ON Assortment."Product id" = Products.Product_id and Sub_product_id={0} INNER JOIN Categories' \
                          ' ON Assortment.Category_id = Categories.Category_id'.format(subproduct_id)
             return self.cursor.execute(sql_request).fetchone()
@@ -89,12 +89,12 @@ class SqlHadler:
 
     def set_subproduct_id(self,chat_id,text):
         with self.connection:
-            temp_data = CustomerTempData().temp_data(chat_id)
-            sql = "SELECT Sub_product_id FROM Products INNER JOIN Assortment ON Products.Product_id = Assortment.\"Product id\" and Description = '{0}' AND \"Product_name\"='{1}'".format(text,temp_data)
+            product_name, description = CustomerTempData().temp_data(chat_id)
+            sql = "SELECT Sub_product_id FROM Products INNER JOIN Assortment ON Products.Product_id = Assortment.\"Product id\" AND Description = '{0}' AND \"Product_name\"='{1}'".format(text, product_name)
             try:
                 subproduct_id = self.cursor.execute(sql).fetchone()[0]
             except TypeError:
-                sql = "SELECT Sub_product_id FROM Products INNER JOIN Assortment ON Products.Product_id = Assortment.\"Product id\" and Flavor = '{0}' AND \"Product_name\"='{1}'".format(text, temp_data)
+                sql = "SELECT Sub_product_id FROM Products INNER JOIN Assortment ON Products.Product_id = Assortment.\"Product id\" AND Flavor = '{0}' AND Description = '{1}' AND \"Product_name\"='{2}'".format(text, description, product_name)
                 subproduct_id = self.cursor.execute(sql).fetchone()[0]
             CustomerTempData().customer_subproduct_id(chat_id,subproduct_id)
 
@@ -105,11 +105,11 @@ class SqlHadler:
                 sql = "INSERT INTO Customer (phone_number, customer_chat_id) VALUES ('{0}','{1}');".format(phone_number,chat_id)
                 self.cursor.execute(sql)
 
-    def add_order(self,chat_id,full_price):
+    def add_order(self,chat_id,full_price,description):
         with self.connection:
             sql ='SELECT customer_id FROM Customer WHERE customer_chat_id={}'.format(chat_id)
             customer_id = self.cursor.execute(sql).fetchone()[0]
-            sql = 'INSERT INTO "Order" (Customer_id, Total_cost) VALUES ({},{})'.format(customer_id,full_price)
+            sql = 'INSERT INTO "Order" (Customer_id, Total_cost,Description) VALUES ({},{},"{}")'.format(customer_id,full_price,description)
             self.cursor.execute(sql)
             return self.cursor.execute('SELECT Order_id FROM "Order" WHERE rowid = last_insert_rowid()').fetchone()[0]
 
@@ -146,6 +146,11 @@ class SqlHadler:
             sql = 'SELECT Flavor FROM Products INNER JOIN Assortment ON Products.Product_id = Assortment."Product id" and Description = "{}" AND Product_name = "{}"'.format(description,product_name)
             list_tuple = self.cursor.execute(sql).fetchall()
             return self.list_tuple_to_list(list_tuple)
+
+    def get_product_name(self,subproduct_id):
+        with self.connection:
+            sql = 'SELECT Product_name FROM Assortment INNER JOIN Products ON Assortment."Product id" = Products.Product_id AND Sub_product_id={}'.format(subproduct_id)
+            return self.cursor.execute(sql).fetchone()[0]
 
     def close(self):
         self.connection.close()
