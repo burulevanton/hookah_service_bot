@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a2104bb-77ac-4b99-a5d0-5db091dbef24" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/8d2fd324-ac70-4f4d-9e21-7210afb391df/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/8d2fd324-ac70-4f4d-9e21-7210afb391df/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/8d2fd324-ac70-4f4d-9e21-7210afb391df/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/8d2fd324-ac70-4f4d-9e21-7210afb391df/_metadata_/metadata.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fsm.db.dat" afterPath="$PROJECT_DIR$/fsm.db.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hookah_service.db" afterPath="$PROJECT_DIR$/hookah_service.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shelve.db.dat" afterPath="$PROJECT_DIR$/shelve.db.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/8d2fd324-ac70-4f4d-9e21-7210afb391df.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/8d2fd324-ac70-4f4d-9e21-7210afb391df.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bot.py" afterPath="$PROJECT_DIR$/bot.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fsm.db.bak" afterPath="$PROJECT_DIR$/fsm.db.bak" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fsm.db.dir" afterPath="$PROJECT_DIR$/fsm.db.dir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/order_calc.py" afterPath="$PROJECT_DIR$/order_calc.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shelve.db.bak" afterPath="$PROJECT_DIR$/shelve.db.bak" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shelve.db.dir" afterPath="$PROJECT_DIR$/shelve.db.dir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql_handler.py" afterPath="$PROJECT_DIR$/sql_handler.py" />
-    </list>
+    <list default="true" id="4a24938a-ad88-49bf-93a4-9d195b4e9228" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/bot$bot.coverage" NAME="bot Coverage Results" MODIFIED="1497643296001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/hookah_service_bot$bot.coverage" NAME="bot Coverage Results" MODIFIED="1499602911340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/hookah_service_bot$bot.coverage" NAME="bot Coverage Results" MODIFIED="1504460140420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -36,170 +20,16 @@
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="hookah_service.db" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="hookah_service.db" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="main" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
+    <expand />
+    <select />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sql_handler.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql_handler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1513">
-              <caret line="91" column="77" lean-forward="false" selection-start-line="91" selection-start-column="77" selection-end-line="91" selection-end-column="77" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <marker date="1499551973729" expanded="true" signature="439:578" ph="SELECT Table... Categories" />
-                <marker date="1499551973729" expanded="true" signature="762:793" ph="SELECT Categ... Categories" />
-                <marker date="1499551973729" expanded="true" signature="948:983" ph="SELECT Produ... Assortment" />
-                <marker date="1499551973729" expanded="true" signature="1194:1320" ph="SELECT Produ... Assortment" />
-                <marker date="1499551973729" expanded="true" signature="1553:1706" ph="SELECT Descr... Products" />
-                <marker date="1499551973729" expanded="true" signature="2069:2076" ph="SELECT {1} F... " />
-                <marker date="1499551973729" expanded="true" signature="2069:2182" ph="SELECT Price... Products" />
-                <marker date="1499551973729" expanded="true" signature="2069:2207" ph="SELECT {} FR... " />
-                <marker date="1499551973729" expanded="true" signature="2069:2208" ph="SELECT missi... Products" />
-                <marker date="1499551973729" expanded="true" signature="2069:2209" ph="SELECT missi... Products" />
-                <marker date="1499551973729" expanded="true" signature="2069:2213" ph="SELECT missi... Products" />
-                <marker date="1499551973729" expanded="true" signature="2069:2255" ph="SELECT {} FR... " />
-                <marker date="1499551973729" expanded="true" signature="2453:2494" ph="SELECT Descr... Products" />
-                <marker date="1499551973729" expanded="true" signature="2701:2737" ph="SELECT DISTI... Products" />
-                <marker date="1499551973729" expanded="true" signature="2953:3079" ph="SELECT Desri... Products" />
-                <marker date="1499551973729" expanded="true" signature="3314:3361" ph="SELECT Unit Products" />
-                <marker date="1499551973729" expanded="true" signature="3314:3364" ph="SELECT Unit Products" />
-                <marker date="1499551973729" expanded="true" signature="3568:3861" ph="SELECT Produ... Assortment" />
-                <marker date="1499551973729" expanded="true" signature="4052:4391" ph="SELECT Price... Assortment" />
-                <marker date="1499551973729" expanded="true" signature="4652:4746" ph="SELECT Sub_p... Products" />
-                <marker date="1499551973729" expanded="true" signature="4652:4758" ph="SELECT Sub_p... Products" />
-                <marker date="1499551973729" expanded="true" signature="4652:4778" ph="SELECT Sub_p... Products" />
-                <marker date="1499551973729" expanded="true" signature="4652:4788" ph="SELECT Sub_p... Products" />
-                <marker date="1499551973729" expanded="true" signature="4652:4798" ph="SELECT Sub_p... Products" />
-                <marker date="1499551973729" expanded="true" signature="4652:4806" ph="SELECT Sub_p... Products" />
-                <marker date="1499551973729" expanded="true" signature="4652:4807" ph="SELECT Sub_p... Products" />
-                <marker date="1499551973729" expanded="true" signature="4652:4811" ph="SELECT Sub_p... Products" />
-                <marker date="1499551973729" expanded="true" signature="4981:5159" ph="SELECT Sub_p... Products" />
-                <marker date="1499551973729" expanded="true" signature="5448:5504" ph="SELECT custo... Customer" />
-                <marker date="1499551973729" expanded="true" signature="5448:5507" ph="SELECT custo... Customer" />
-                <marker date="1499551973729" expanded="true" signature="5608:5670" ph="INSERT INTO Customer... " />
-                <marker date="1499551973729" expanded="true" signature="5608:5682" ph="INSERT INTO Customer... " />
-                <marker date="1499551973729" expanded="true" signature="5860:5916" ph="SELECT custo... Customer" />
-                <marker date="1499551973729" expanded="true" signature="5860:5918" ph="SELECT custo... Customer" />
-                <marker date="1499551973729" expanded="true" signature="6020:6097" ph="INSERT INTO &quot;Order&quot;... " />
-                <marker date="1499551973729" expanded="true" signature="6219:6281" ph="SELECT Order... Order" />
-                <marker date="1499551973729" expanded="true" signature="6414:6498" ph="INSERT INTO OrderProducts... " />
-                <marker date="1499551973729" expanded="true" signature="6666:6722" ph="SELECT custo... Customer" />
-                <marker date="1499551973729" expanded="true" signature="6944:7064" ph="SELECT Order... Order" />
-                <marker date="1499551973729" expanded="true" signature="6944:7066" ph="SELECT Order... Order" />
-                <marker date="1499551973729" expanded="true" signature="7294:7359" ph="SELECT Produ... OrderProducts" />
-                <marker date="1499551973729" expanded="true" signature="7294:7361" ph="SELECT Produ... OrderProducts" />
-                <marker date="1499551973729" expanded="true" signature="7564:7617" ph="SELECT Min_w... Products" />
-                <marker date="1499551973729" expanded="true" signature="7564:7619" ph="SELECT Min_w... Products" />
-                <marker date="1499551973729" expanded="true" signature="7802:7918" ph="SELECT Flavo... Products" />
-                <marker date="1499551973729" expanded="true" signature="7802:7942" ph="SELECT Flavo... Products" />
-                <marker date="1499551973729" expanded="true" signature="7802:7947" ph="SELECT Flavo... Products" />
-                <marker date="1499551973729" expanded="true" signature="8194:8318" ph="SELECT Produ... Assortment" />
-                <marker date="1499551973729" expanded="true" signature="8194:8320" ph="SELECT Produ... Assortment" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.Customer" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Customer">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.Products" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Products">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.Categories" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Categories">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.Assortment" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Assortment">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8d2fd324-ac70-4f4d-9e21-7210afb391df/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="126" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bot.py" pinned="false" current-in-tab="true">
+    <leaf>
+      <file leaf-file-name="bot.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="376" column="42" lean-forward="false" selection-start-line="376" selection-start-column="42" selection-end-line="376" selection-end-column="42" />
+            <state relative-caret-position="-2847">
+              <caret line="172" column="65" lean-forward="false" selection-start-line="172" selection-start-column="53" selection-end-line="172" selection-end-column="65" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -207,24 +37,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="order_calc.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/order_calc.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.Order" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Order">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
+      <file leaf-file-name="Assortment" pinned="false" current-in-tab="false">
+        <entry file="das://table:/66bb1fee/49300fd5-d40f-4bb1-8652-2c47b1557395/main.Assortment">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -232,45 +46,86 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Products" pinned="false" current-in-tab="false">
+        <entry file="das://table:/66bb1fee/49300fd5-d40f-4bb1-8652-2c47b1557395/main.Products">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order_calc.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/order_calc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="72" column="49" lean-forward="true" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sql_handler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql_handler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2108">
+              <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+                <marker date="1504441188947" expanded="true" signature="453:617" ph="SELECT Categ... Categories" />
+                <marker date="1504441188947" expanded="true" signature="801:832" ph="SELECT Categ... Categories" />
+                <marker date="1504441188947" expanded="true" signature="986:1021" ph="SELECT Produ... Assortment" />
+                <marker date="1504441188947" expanded="true" signature="1232:1389" ph="SELECT Produ... Assortment" />
+                <marker date="1504441188947" expanded="true" signature="1622:1798" ph="SELECT Descr... Products" />
+                <marker date="1504441188947" expanded="true" signature="2161:2367" ph="SELECT missi... Products" />
+                <marker date="1504441188947" expanded="true" signature="2607:2648" ph="SELECT DISTI... Products" />
+                <marker date="1504441188947" expanded="true" signature="2855:2891" ph="SELECT DISTI... Products" />
+                <marker date="1504441188947" expanded="true" signature="3107:3264" ph="SELECT Descr... Products" />
+                <marker date="1504441188947" expanded="true" signature="3499:3546" ph="SELECT Unit Products" />
+                <marker date="1504441188947" expanded="true" signature="3753:4046" ph="SELECT Categ... Assortment" />
+                <marker date="1504441188947" expanded="true" signature="4237:4576" ph="SELECT Price... Assortment" />
+                <marker date="1504441188947" expanded="true" signature="4837:5042" ph="SELECT Sub_p... Products" />
+                <marker date="1504441188947" expanded="true" signature="5212:5444" ph="SELECT Sub_p... Products" />
+                <marker date="1504441188947" expanded="true" signature="5733:5789" ph="SELECT custo... Customer" />
+                <marker date="1504441188947" expanded="true" signature="5893:5967" ph="INSERT INTO Customer... " />
+                <marker date="1504441188947" expanded="true" signature="6145:6201" ph="SELECT custo... Customer" />
+                <marker date="1504441188947" expanded="true" signature="6305:6382" ph="INSERT INTO &quot;Order&quot;... " />
+                <marker date="1504441188947" expanded="true" signature="6504:6566" ph="SELECT Order... Order" />
+                <marker date="1504441188947" expanded="true" signature="6699:6783" ph="INSERT INTO OrderProducts... " />
+                <marker date="1504441188947" expanded="true" signature="6951:7007" ph="SELECT custo... Customer" />
+                <marker date="1504441188947" expanded="true" signature="7229:7372" ph="SELECT Order... Order" />
+                <marker date="1504441188947" expanded="true" signature="7602:7667" ph="SELECT Produ... OrderProducts" />
+                <marker date="1504441188947" expanded="true" signature="7872:7925" ph="SELECT Min_w... Products" />
+                <marker date="1504441188947" expanded="true" signature="8110:8301" ph="SELECT Flavo... Products" />
+                <marker date="1504441188947" expanded="true" signature="8548:8695" ph="SELECT Produ... Assortment" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>list_tup</find>
-      <find>genera</find>
-      <find>temp</find>
-      <find>des</find>
-      <find>replykeyboard</find>
-      <find>order_calc</find>
-      <find>order</find>
-      <find>static</find>
-      <find>utils</find>
-      <find>db</find>
-      <find>isdi</find>
-      <find>generate_message</find>
-      <find>temp_data</find>
-      <find>order_description</find>
-      <find>order_descri</find>
+      <find>SqlHadler</find>
+      <find>новый заказ</find>
+      <find>keyboard</find>
+      <find>start</find>
+      <find>price</find>
       <find>accept_order</find>
-      <find>contact</find>
-      <find>order_info</find>
-      <find>get_order</find>
-      <find>Ice lemon</find>
-      <find>Temp</find>
-      <find>TempData</find>
-      <find>temp_shelve</find>
-      <find>add</find>
-      <find>add_product</find>
-      <find>print</find>
-      <find>yield</find>
-      <find>customer_su</find>
+      <find>SqlH</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -279,17 +134,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e75f6a0d-3850-4b82-9831-284dd4493c81/console.sql" />
-        <option value="dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Assortment" />
-        <option value="dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
-        <option value="dbtable:/73fc7c23/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Assortment" />
-        <option value="dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Coal" />
-        <option value="$PROJECT_DIR$/Order.py" />
-        <option value="$PROJECT_DIR$/settings.py" />
-        <option value="$PROJECT_DIR$/utils.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8d2fd324-ac70-4f4d-9e21-7210afb391df/console.sql" />
         <option value="$PROJECT_DIR$/sql_handler.py" />
         <option value="$PROJECT_DIR$/order_calc.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/49300fd5-d40f-4bb1-8652-2c47b1557395/console.sql" />
         <option value="$PROJECT_DIR$/bot.py" />
       </list>
     </option>
@@ -300,13 +147,12 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1462" />
+    <option name="y" value="-109" />
+    <option name="width" value="1931" />
+    <option name="height" value="1047" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -322,30 +168,26 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hookah_service_bot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hookah_service_bot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="hookah_service_bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hookah_service_bot" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)&#10;DB2 (JTOpen)&#10;DDL Data Source" />
-    <property name="DataGrid.QuickDoc.View" value="regular" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -360,15 +202,15 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.bot">
-    <configuration default="false" name="bot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="bot" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\ProgramData\Anaconda3\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="hookah_service_bot" />
@@ -377,160 +219,7 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <method />
     </configuration>
-    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="bot" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
-      <node-interpreter value="project" />
-      <working-dir value="" />
-      <envs />
-      <scope-kind value="ALL" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="bot" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="bot" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="bot" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <module name="bot" />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="bot" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Nosetests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="bot" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;.&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Python.bot" />
-    </list>
     <recent_temporary>
       <list size="1">
         <item index="0" class="java.lang.String" itemvalue="Python.bot" />
@@ -542,441 +231,176 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8a2104bb-77ac-4b99-a5d0-5db091dbef24" name="Default" comment="" />
-      <created>1496860711905</created>
+      <changelist id="4a24938a-ad88-49bf-93a4-9d195b4e9228" name="Default" comment="" />
+      <created>1504440061020</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1496860711905</updated>
+      <updated>1504440061020</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1288" y="-106" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0875" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2652174" sideWeight="0.5052083" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13489583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2652174" sideWeight="0.49479166" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39891306" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32966456" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="93" y="100" width="1724" height="847" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33043477" sideWeight="0.49791667" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21627408" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1234375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1078125" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
-  </component>
-  <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
-      <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
-      </list>
-    </option>
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="8" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
-    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
-    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
-    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
-    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
-    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
-    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
-    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
-    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
-    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
-    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
-    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
-    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
-    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
-    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
-    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Categories" />
-    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Tobacco" />
-    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Hose" />
-    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Assortment" />
-    <entry file="dbDummy://dbtable:/73fc7c23/e75f6a0d-3850-4b82-9831-284dd4493c81/main.Coal" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e75f6a0d-3850-4b82-9831-284dd4493c81/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/73fc7c23/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.sqlite_master" />
-    <entry file="dbDummy://dbtable:/73fc7c23/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Categories" />
-    <entry file="dbDummy://dbtable:/73fc7c23/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.sqlite_sequence" />
-    <entry file="dbDummy://dbtable:/73fc7c23/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Assortment" />
-    <entry file="dbDummy://dbtable:/73fc7c23/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Coal" />
-    <entry file="dbDummy://dbtable:/73fc7c23/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Tobacco" />
-    <entry file="dbDummy://dbtable:/73fc7c23/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Hose" />
-    <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Tobacco">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Hose">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.sqlite_sequence">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Coal">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.sqlite_master">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Order">
+    <entry file="uml://DATABASE/49300fd5-d40f-4bb1-8652-2c47b1557395">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
           <ID>DATABASE</ID>
-          <OriginalElement>8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Order</OriginalElement>
+          <OriginalElement>49300fd5-d40f-4bb1-8652-2c47b1557395</OriginalElement>
           <nodes>
-            <node x="" y="">8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Customer</node>
-            <node x="" y="">8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Order</node>
+            <node x="" y="">49300fd5-d40f-4bb1-8652-2c47b1557395.TABLE:main.OrderProducts</node>
+            <node x="" y="">49300fd5-d40f-4bb1-8652-2c47b1557395.TABLE:main.Products</node>
+            <node x="" y="">49300fd5-d40f-4bb1-8652-2c47b1557395.TABLE:main.Assortment</node>
+            <node x="" y="">49300fd5-d40f-4bb1-8652-2c47b1557395.TABLE:main.sqlite_sequence</node>
+            <node x="" y="">49300fd5-d40f-4bb1-8652-2c47b1557395.TABLE:main.Order</node>
+            <node x="" y="">49300fd5-d40f-4bb1-8652-2c47b1557395.TABLE:main.sqlite_master</node>
+            <node x="" y="">49300fd5-d40f-4bb1-8652-2c47b1557395.TABLE:main.Customer</node>
+            <node x="" y="">49300fd5-d40f-4bb1-8652-2c47b1557395.TABLE:main.Categories</node>
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="91.0" y="110.0" />
+          <settings layout="Hierarchic Group" zoom="0.7643142476697736" x="546.0026132404181" y="674.8432055749129" />
           <SelectedNodes />
           <Categories>
-            <Category>Columns</Category>
             <Category>Key columns</Category>
+            <Category>Columns</Category>
           </Categories>
-          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
-    <entry file="uml://DATABASE/8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.OrderProducts">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/49300fd5-d40f-4bb1-8652-2c47b1557395/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/66bb1fee/49300fd5-d40f-4bb1-8652-2c47b1557395/main.Assortment">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/66bb1fee/49300fd5-d40f-4bb1-8652-2c47b1557395/main.Products">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/Anton/Documents/GitHub/hookah_service_bot">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.OrderProducts</OriginalElement>
-          <nodes>
-            <node x="" y="">8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Customer</node>
-            <node x="" y="">8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Order</node>
-            <node x="" y="">8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Categories</node>
-            <node x="" y="">8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Products</node>
-            <node x="" y="">8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Assortment</node>
-            <node x="" y="">8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.OrderProducts</node>
-          </nodes>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$</OriginalElement>
+          <nodes />
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.8720748829953198" x="270.0" y="331.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="492.0" y="417.5" />
           <SelectedNodes />
           <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
+            <Category>All</Category>
           </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Order.py" />
-    <entry file="file://$PROJECT_DIR$/shelve.db.bak">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Products">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Products</OriginalElement>
-          <nodes>
-            <node x="" y="">8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Categories</node>
-            <node x="" y="">8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Assortment</node>
-            <node x="" y="">8d2fd324-ac70-4f4d-9e21-7210afb391df.TABLE:main.Products</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="179.0" y="260.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="20" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="37" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.OrderProducts">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Customer">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8d2fd324-ac70-4f4d-9e21-7210afb391df/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="126" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Order">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+          <VISIBILITY>Details</VISIBILITY>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sql_handler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="91" column="77" lean-forward="false" selection-start-line="91" selection-start-column="77" selection-end-line="91" selection-end-column="77" />
+        <state relative-caret-position="2108">
+          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1499551973729" expanded="true" signature="439:578" ph="SELECT Table... Categories" />
-            <marker date="1499551973729" expanded="true" signature="762:793" ph="SELECT Categ... Categories" />
-            <marker date="1499551973729" expanded="true" signature="948:983" ph="SELECT Produ... Assortment" />
-            <marker date="1499551973729" expanded="true" signature="1194:1320" ph="SELECT Produ... Assortment" />
-            <marker date="1499551973729" expanded="true" signature="1553:1706" ph="SELECT Descr... Products" />
-            <marker date="1499551973729" expanded="true" signature="2069:2076" ph="SELECT {1} F... " />
-            <marker date="1499551973729" expanded="true" signature="2069:2182" ph="SELECT Price... Products" />
-            <marker date="1499551973729" expanded="true" signature="2069:2207" ph="SELECT {} FR... " />
-            <marker date="1499551973729" expanded="true" signature="2069:2208" ph="SELECT missi... Products" />
-            <marker date="1499551973729" expanded="true" signature="2069:2209" ph="SELECT missi... Products" />
-            <marker date="1499551973729" expanded="true" signature="2069:2213" ph="SELECT missi... Products" />
-            <marker date="1499551973729" expanded="true" signature="2069:2255" ph="SELECT {} FR... " />
-            <marker date="1499551973729" expanded="true" signature="2453:2494" ph="SELECT Descr... Products" />
-            <marker date="1499551973729" expanded="true" signature="2701:2737" ph="SELECT DISTI... Products" />
-            <marker date="1499551973729" expanded="true" signature="2953:3079" ph="SELECT Desri... Products" />
-            <marker date="1499551973729" expanded="true" signature="3314:3361" ph="SELECT Unit Products" />
-            <marker date="1499551973729" expanded="true" signature="3314:3364" ph="SELECT Unit Products" />
-            <marker date="1499551973729" expanded="true" signature="3568:3861" ph="SELECT Produ... Assortment" />
-            <marker date="1499551973729" expanded="true" signature="4052:4391" ph="SELECT Price... Assortment" />
-            <marker date="1499551973729" expanded="true" signature="4652:4746" ph="SELECT Sub_p... Products" />
-            <marker date="1499551973729" expanded="true" signature="4652:4758" ph="SELECT Sub_p... Products" />
-            <marker date="1499551973729" expanded="true" signature="4652:4778" ph="SELECT Sub_p... Products" />
-            <marker date="1499551973729" expanded="true" signature="4652:4788" ph="SELECT Sub_p... Products" />
-            <marker date="1499551973729" expanded="true" signature="4652:4798" ph="SELECT Sub_p... Products" />
-            <marker date="1499551973729" expanded="true" signature="4652:4806" ph="SELECT Sub_p... Products" />
-            <marker date="1499551973729" expanded="true" signature="4652:4807" ph="SELECT Sub_p... Products" />
-            <marker date="1499551973729" expanded="true" signature="4652:4811" ph="SELECT Sub_p... Products" />
-            <marker date="1499551973729" expanded="true" signature="4981:5159" ph="SELECT Sub_p... Products" />
-            <marker date="1499551973729" expanded="true" signature="5448:5504" ph="SELECT custo... Customer" />
-            <marker date="1499551973729" expanded="true" signature="5448:5507" ph="SELECT custo... Customer" />
-            <marker date="1499551973729" expanded="true" signature="5608:5670" ph="INSERT INTO Customer... " />
-            <marker date="1499551973729" expanded="true" signature="5608:5682" ph="INSERT INTO Customer... " />
-            <marker date="1499551973729" expanded="true" signature="5860:5916" ph="SELECT custo... Customer" />
-            <marker date="1499551973729" expanded="true" signature="5860:5918" ph="SELECT custo... Customer" />
-            <marker date="1499551973729" expanded="true" signature="6020:6097" ph="INSERT INTO &quot;Order&quot;... " />
-            <marker date="1499551973729" expanded="true" signature="6219:6281" ph="SELECT Order... Order" />
-            <marker date="1499551973729" expanded="true" signature="6414:6498" ph="INSERT INTO OrderProducts... " />
-            <marker date="1499551973729" expanded="true" signature="6666:6722" ph="SELECT custo... Customer" />
-            <marker date="1499551973729" expanded="true" signature="6944:7064" ph="SELECT Order... Order" />
-            <marker date="1499551973729" expanded="true" signature="6944:7066" ph="SELECT Order... Order" />
-            <marker date="1499551973729" expanded="true" signature="7294:7359" ph="SELECT Produ... OrderProducts" />
-            <marker date="1499551973729" expanded="true" signature="7294:7361" ph="SELECT Produ... OrderProducts" />
-            <marker date="1499551973729" expanded="true" signature="7564:7617" ph="SELECT Min_w... Products" />
-            <marker date="1499551973729" expanded="true" signature="7564:7619" ph="SELECT Min_w... Products" />
-            <marker date="1499551973729" expanded="true" signature="7802:7918" ph="SELECT Flavo... Products" />
-            <marker date="1499551973729" expanded="true" signature="7802:7942" ph="SELECT Flavo... Products" />
-            <marker date="1499551973729" expanded="true" signature="7802:7947" ph="SELECT Flavo... Products" />
-            <marker date="1499551973729" expanded="true" signature="8194:8318" ph="SELECT Produ... Assortment" />
-            <marker date="1499551973729" expanded="true" signature="8194:8320" ph="SELECT Produ... Assortment" />
+            <marker date="1504441188947" expanded="true" signature="453:617" ph="SELECT Categ... Categories" />
+            <marker date="1504441188947" expanded="true" signature="801:832" ph="SELECT Categ... Categories" />
+            <marker date="1504441188947" expanded="true" signature="986:1021" ph="SELECT Produ... Assortment" />
+            <marker date="1504441188947" expanded="true" signature="1232:1389" ph="SELECT Produ... Assortment" />
+            <marker date="1504441188947" expanded="true" signature="1622:1798" ph="SELECT Descr... Products" />
+            <marker date="1504441188947" expanded="true" signature="2161:2367" ph="SELECT missi... Products" />
+            <marker date="1504441188947" expanded="true" signature="2607:2648" ph="SELECT DISTI... Products" />
+            <marker date="1504441188947" expanded="true" signature="2855:2891" ph="SELECT DISTI... Products" />
+            <marker date="1504441188947" expanded="true" signature="3107:3264" ph="SELECT Descr... Products" />
+            <marker date="1504441188947" expanded="true" signature="3499:3546" ph="SELECT Unit Products" />
+            <marker date="1504441188947" expanded="true" signature="3753:4046" ph="SELECT Categ... Assortment" />
+            <marker date="1504441188947" expanded="true" signature="4237:4576" ph="SELECT Price... Assortment" />
+            <marker date="1504441188947" expanded="true" signature="4837:5042" ph="SELECT Sub_p... Products" />
+            <marker date="1504441188947" expanded="true" signature="5212:5444" ph="SELECT Sub_p... Products" />
+            <marker date="1504441188947" expanded="true" signature="5733:5789" ph="SELECT custo... Customer" />
+            <marker date="1504441188947" expanded="true" signature="5893:5967" ph="INSERT INTO Customer... " />
+            <marker date="1504441188947" expanded="true" signature="6145:6201" ph="SELECT custo... Customer" />
+            <marker date="1504441188947" expanded="true" signature="6305:6382" ph="INSERT INTO &quot;Order&quot;... " />
+            <marker date="1504441188947" expanded="true" signature="6504:6566" ph="SELECT Order... Order" />
+            <marker date="1504441188947" expanded="true" signature="6699:6783" ph="INSERT INTO OrderProducts... " />
+            <marker date="1504441188947" expanded="true" signature="6951:7007" ph="SELECT custo... Customer" />
+            <marker date="1504441188947" expanded="true" signature="7229:7372" ph="SELECT Order... Order" />
+            <marker date="1504441188947" expanded="true" signature="7602:7667" ph="SELECT Produ... OrderProducts" />
+            <marker date="1504441188947" expanded="true" signature="7872:7925" ph="SELECT Min_w... Products" />
+            <marker date="1504441188947" expanded="true" signature="8110:8301" ph="SELECT Flavo... Products" />
+            <marker date="1504441188947" expanded="true" signature="8548:8695" ph="SELECT Produ... Assortment" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order_calc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Assortment">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Categories">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/b779332c/8d2fd324-ac70-4f4d-9e21-7210afb391df/main.Products">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/test/bot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="376" column="42" lean-forward="false" selection-start-line="376" selection-start-column="42" selection-end-line="376" selection-end-column="42" />
+        <state relative-caret-position="-2847">
+          <caret line="172" column="65" lean-forward="false" selection-start-line="172" selection-start-column="53" selection-end-line="172" selection-end-column="65" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order_calc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="72" column="49" lean-forward="true" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>

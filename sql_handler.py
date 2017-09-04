@@ -3,27 +3,28 @@ from settings import database
 from order_calc import CustomerTempData
 
 
-class SqlHadler:
+class SqlHandler:
 
     def __init__(self):
         self.connection = sqlite3.connect(database)
         self.cursor = self.connection.cursor()
 
-    def list_tuple_to_list(self,list_tuple):
+    @staticmethod
+    def list_tuple_to_list(list_tuple):
         list = []
         for l in list_tuple:
             list.append(l[0])
         return list
 
     def get_category_of_product(self,text):
-        sql_request = 'SELECT Category FROM Categories INNER JOIN Assortment ON Categories.Category_id = Assortment.Category_id AND Assortment.Product_name = "{}"'.format(text)
+        sql_request = 'SELECT Category FROM Categories INNER JOIN Assortment ' \
+                    'ON Categories.Category_id = Assortment.Category_id AND Assortment.Product_name = "{}"'.format(text)
         return self.cursor.execute(sql_request).fetchone()[0]
 
     def get_categories(self):
         with self.connection:
             list_tuple = self.cursor.execute('SELECT Category FROM Categories').fetchall()
             return self.list_tuple_to_list(list_tuple)
-
 
     def get_full_assortment(self):
         with self.connection:
@@ -33,20 +34,24 @@ class SqlHadler:
 
     def get_assortment(self,text):
         with self.connection:
-            sql_request = 'SELECT Product_name FROM Assortment INNER JOIN Categories On Category="{}" and Assortment.Category_id = Categories.Category_id'.format(text)
+            sql_request = 'SELECT Product_name FROM Assortment INNER JOIN Categories On Category="{}" ' \
+                          'and Assortment.Category_id = Categories.Category_id'.format(text)
             list_tuple = self.cursor.execute(sql_request).fetchall()
             return self.list_tuple_to_list(list_tuple)
 
     def get_product_description(self,text):
         with self.connection:
-            sql = 'SELECT Description,Sub_product_id FROM Products INNER JOIN Assortment ON Products.Product_id = Assortment."Product id" AND Assortment.Product_name = "{}"'.format(text)
+            sql = 'SELECT Description,Sub_product_id FROM Products INNER JOIN Assortment ' \
+                  'ON Products.Product_id = Assortment."Product id" AND Assortment.Product_name = "{}"'.format(text)
             list_tuple = self.cursor.execute(sql).fetchall()
             return self.list_tuple_to_list(list_tuple)
 
     def get_product_info(self, decription, product_name):
         with self.connection:
             columns = 'Price,Small_discount,Small_discount_treshold,Big_discount,Big_discount_treshold,Unit,Flavor'
-            sql_request = 'SELECT {0} FROM Products INNER JOIN Assortment ON Products.Product_id = Assortment."Product id" and Description = "{1}" and Product_name = "{2}"'.format(columns, decription,product_name)
+            sql_request = 'SELECT {0} FROM Products INNER JOIN Assortment ' \
+                          'ON Products.Product_id = Assortment."Product id" and Description = "{1}" and ' \
+                          'Product_name = "{2}"'.format(columns, decription,product_name)
             list_tuple = self.cursor.execute(sql_request).fetchall()
             return list_tuple
 
@@ -64,7 +69,8 @@ class SqlHadler:
 
     def get_subproduct_info(self,text):
         with self.connection:
-            sql_request = 'SELECT Description FROM Products INNER JOIN Assortment ON Products.Product_id = Assortment."Product id" and Product_name="{0}"'.format(text)
+            sql_request = 'SELECT Description FROM Products INNER JOIN Assortment ' \
+                          'ON Products.Product_id = Assortment."Product id" and Product_name="{0}"'.format(text)
             list_tuple = self.cursor.execute(sql_request).fetchall()
             return self.list_tuple_to_list(list_tuple)
 
@@ -90,11 +96,15 @@ class SqlHadler:
     def set_subproduct_id(self,chat_id,text):
         with self.connection:
             product_name, description = CustomerTempData().temp_data(chat_id)
-            sql = "SELECT Sub_product_id FROM Products INNER JOIN Assortment ON Products.Product_id = Assortment.\"Product id\" AND Description = '{0}' AND \"Product_name\"='{1}'".format(text, product_name)
+            sql = "SELECT Sub_product_id FROM Products INNER JOIN Assortment " \
+                  "ON Products.Product_id = Assortment.\"Product id\" AND Description = '{0}'" \
+                  " AND \"Product_name\"='{1}'".format(text, product_name)
             try:
                 subproduct_id = self.cursor.execute(sql).fetchone()[0]
             except TypeError:
-                sql = "SELECT Sub_product_id FROM Products INNER JOIN Assortment ON Products.Product_id = Assortment.\"Product id\" AND Flavor = '{0}' AND Description = '{1}' AND \"Product_name\"='{2}'".format(text, description, product_name)
+                sql = "SELECT Sub_product_id FROM Products INNER JOIN Assortment " \
+                      "ON Products.Product_id = Assortment.\"Product id\" AND Flavor = '{0}' " \
+                      "AND Description = '{1}' AND \"Product_name\"='{2}'".format(text, description, product_name)
                 subproduct_id = self.cursor.execute(sql).fetchone()[0]
             CustomerTempData().customer_subproduct_id(chat_id,subproduct_id)
 
@@ -126,7 +136,8 @@ class SqlHadler:
                 return []
             else:
                 customer_id = customer_id[0]
-            sql = 'SELECT Order_id FROM "Order" INNER JOIN Customer ON "Order".Customer_id = Customer.customer_id and Customer.customer_id={}'.format(customer_id)
+            sql = 'SELECT Order_id FROM "Order" INNER JOIN Customer ' \
+                  'ON "Order".Customer_id = Customer.customer_id and Customer.customer_id={}'.format(customer_id)
             list = self.list_tuple_to_list(self.cursor.execute(sql).fetchall())
             return list
 
@@ -143,13 +154,16 @@ class SqlHadler:
 
     def get_flavor(self,description,product_name):
         with self.connection:
-            sql = 'SELECT Flavor FROM Products INNER JOIN Assortment ON Products.Product_id = Assortment."Product id" and Description = "{}" AND Product_name = "{}"'.format(description,product_name)
+            sql = 'SELECT Flavor FROM Products INNER JOIN Assortment ' \
+                  'ON Products.Product_id = Assortment."Product id" and Description = "{}" ' \
+                  'AND Product_name = "{}"'.format(description,product_name)
             list_tuple = self.cursor.execute(sql).fetchall()
             return self.list_tuple_to_list(list_tuple)
 
     def get_product_name(self,subproduct_id):
         with self.connection:
-            sql = 'SELECT Product_name FROM Assortment INNER JOIN Products ON Assortment."Product id" = Products.Product_id AND Sub_product_id={}'.format(subproduct_id)
+            sql = 'SELECT Product_name FROM Assortment INNER JOIN Products ' \
+                  'ON Assortment."Product id" = Products.Product_id AND Sub_product_id={}'.format(subproduct_id)
             return self.cursor.execute(sql).fetchone()[0]
 
     def close(self):

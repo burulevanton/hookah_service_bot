@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="hookah_service.db" uuid="8d2fd324-ac70-4f4d-9e21-7210afb391df">
+    <data-source name="hookah_service.db" uuid="49300fd5-d40f-4bb1-8652-2c47b1557395">
       <database-info product="SQLite" version="3.16.1" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" />
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
