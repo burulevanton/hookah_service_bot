@@ -2,11 +2,15 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="hookah_service.db" uuid="49300fd5-d40f-4bb1-8652-2c47b1557395">
-      <database-info product="SQLite" version="3.16.1" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" />
+      <database-info product="SQLite" version="3.16.1" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" dbms="SQLITE" exact-version="3.16.1" />
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
       <auth-required>false</auth-required>
       <introspection-schemas>*:main</introspection-schemas>
+    </data-source>
+    <data-source name="User Data Source -" uuid="8609c4c2-98cc-4e28-9a86-91fd8c4973df">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="UNKNOWN" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
     </data-source>
   </component>
 </project>

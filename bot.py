@@ -219,9 +219,6 @@ class Bot(telebot.TeleBot):
             self.send_message(text=text, chat_id=message.chat.id,reply_markup=types.ReplyKeyboardRemove())
             text = 'Новый заказ №{0}!\n'.format(order_id) + self.temp_shelve.order_info(message.chat.id)
             text = text+'\nКомментарии к заказу:\n'+self.temp_data.get_order_description(message.chat.id)
-            self.send_message(text=text, chat_id=***REMOVED***)
-            self.send_contact(chat_id=***REMOVED***, phone_number=message.contact.phone_number,
-                              first_name=message.contact.first_name)
             self.temp_shelve.del_order(message.chat.id)
             db.close()
 
